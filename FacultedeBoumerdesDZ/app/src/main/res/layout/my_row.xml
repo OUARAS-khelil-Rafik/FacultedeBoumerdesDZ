@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20px">
+                <TextView
+                    android:id="@+id/faculty_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:theme="@style/TitleStyleNavBar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+                <TextView
+                    android:id="@+id/list_faculty_nameDoyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom &amp; Prénom Doyen: "
+                    android:theme="@style/TitleStyleNavBar" />
+
+                <TextView
+                    android:id="@+id/faculty_nameDoyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:theme="@style/TitleStyleNavBar" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+                <TextView
+                    android:id="@+id/list_faculty_telFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tél / Fax : "
+                    android:theme="@style/TitleStyleNavBar" />
+
+                <TextView
+                    android:id="@+id/faculty_telFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:theme="@style/TitleStyleNavBar" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/appel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MyButtonStyle"
+                    android:onClick="makeCall"
+                    android:text="Appel" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MyButtonStyle"
+                    android:onClick="sendSMS"
+                    android:text="SMS" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+                <TextView
+                    android:id="@+id/list_faculty_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mail : "
+                    android:theme="@style/TitleStyleNavBar" />
+
+                <TextView
+                    android:id="@+id/faculty_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:theme="@style/TitleStyleNavBar" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyButtonStyle"
+                android:onClick="sendEmail"
+                android:text="Envoi E-mail" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+                <TextView
+                    android:id="@+id/list_faculty_sitWeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Site Web : "
+                    android:theme="@style/TitleStyleNavBar" />
+
+                <TextView
+                    android:id="@+id/faculty_siteWeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:theme="@style/TitleStyleNavBar" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+                <TextView
+                    android:id="@+id/list_faculty_adresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse : "
+                    android:theme="@style/TitleStyleNavBar" />
+
+                <TextView
+                    android:id="@+id/faculty_adresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:theme="@style/TitleStyleNavBar" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

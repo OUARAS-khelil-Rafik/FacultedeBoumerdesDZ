@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/gradient_color1"
+    tools:context="AddFacultyActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/CustomScrollBarStyle">
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/appbar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Les informations de la faculté"
+                android:theme="@style/TitleStyleAddFaculty"
+                android:layout_margin="50px"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:text="Nom de la faculté"
+                android:theme="@style/TitleStyleNavBar"/>
+            <EditText
+                android:id="@+id/nameFac"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_height="150px"
+                android:padding="30px"
+                android:hint="Nom de la faculté"
+                android:textColorHint="@color/blue"
+                android:inputType="textPersonName"
+                style="@style/CustomEditTextStyle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom &amp; Prénom Doyen"
+                android:layout_margin="30px"
+                android:theme="@style/TitleStyleNavBar"/>
+            <EditText
+                android:id="@+id/nameDoyen"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:padding="30px"
+                android:hint="Nom &amp; Prénom Doyen"
+                android:textColorHint="@color/blue"
+                android:inputType="textPersonName"
+                style="@style/CustomEditTextStyle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:text="Tél / Fax"
+                android:theme="@style/TitleStyleNavBar"/>
+            <EditText
+                android:id="@+id/telFax"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:padding="30px"
+                android:hint="Téléphone / Fax"
+                android:textColorHint="@color/blue"
+                android:inputType="phone|number"
+                style="@style/CustomEditTextStyle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:text="Mail"
+                android:theme="@style/TitleStyleNavBar"/>
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:padding="30px"
+                android:hint="E-mail"
+                android:textColorHint="@color/blue"
+                android:inputType="textEmailAddress"
+                style="@style/CustomEditTextStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:text="Site Web"
+                android:theme="@style/TitleStyleNavBar"/>
+            <EditText
+                android:id="@+id/siteWeb"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:padding="30px"
+                android:hint="Site web"
+                android:textColorHint="@color/blue"
+                android:inputType="textUri"
+                style="@style/CustomEditTextStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:text="Adresse"
+                android:theme="@style/TitleStyleNavBar"/>
+            <EditText
+                android:id="@+id/adresse"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:padding="30px"
+                android:hint="Adresse"
+                android:textColorHint="@color/blue"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:gravity="top|start"
+                android:lineSpacingExtra="8dp"
+                style="@style/CustomEditTextStyle"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="30px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/selectImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:padding="30px"
+                style="@style/MyButtonStyle"
+                android:layout_marginTop="16dp"
+                android:text="Select Image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="50px"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    style="@style/ButtonStyleForms"
+                    android:id="@+id/buttonAjouter"
+                    android:text="Ajouter"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonAnnuler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    style="@style/ButtonStyleForms"
+                    android:text="Annuler"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|top">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MyButtonStyle"
+                    android:text="Modifier" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/supprimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MyButtonStyle"
+                    android:text="Supprimer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/gradient_color1"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemIconSize="100px"
+        app:itemTextAppearance="@style/TitleStyleHeader"
+        app:itemVerticalPadding="50px"
+        app:itemIconTint="@color/white"
+        app:itemBackground="@drawable/nav_item_background"
+        app:itemTextColor="@color/white"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
