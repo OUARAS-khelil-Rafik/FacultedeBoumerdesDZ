@@ -43,3 +43,5 @@ The app requires the following permissions:
 - **Fonts:** Standard Android fonts are used for simplicity and readability.
 
 Feel free to explore, contribute, and enhance the app further!
+
+  **OUARAS Khelil Rafik**
